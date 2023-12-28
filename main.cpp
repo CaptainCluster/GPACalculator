@@ -33,7 +33,7 @@ int main() {
 		std::cout << OPTION_ZERO << std::endl;
 		std::cout << "======================================" << std::endl;
 
-		//Requesting an input based on the given choices
+		//Requesting an input based on the given choices.
 		std::cout << "Insert your choice: ";
 		std::getline(std::cin, userOptionString);
 
