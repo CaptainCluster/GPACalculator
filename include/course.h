@@ -9,6 +9,7 @@ private:
 	int credits{};
 	int grade{};
 
+
 public:
 	Course(std::string name, int credits, int grade);
 
@@ -19,5 +20,5 @@ public:
 	void setName(std::string inputName);
 	void setCredits(int inputCredits);
 	void setGrade(int inputGrade);
-	void printInfo();
+	void printInfo() const;
 };

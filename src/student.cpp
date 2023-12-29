@@ -6,6 +6,9 @@
 
 #define NOTIFY_COURSE_DELETED	"The course has been deleted."
 
+const int GRADE_LOWER_BOUNDARY{ 1 };
+const int GRADE_UPPER_BOUNDARY{ 5 };
+
 Student* Student::studentPtr = nullptr;
 
 Student::Student(){}
@@ -24,17 +27,22 @@ void Student::addCourse() {
 	int inputGrade;
 	int inputCredits;
 
-	//Asking for the course name, credits and the grade to be given
-	std::cout << INPUT_COURSE_NAME;
+	std::cout << INPUT_COURSE_NAME;						//Asking for the course name
 	std::getline(std::cin, inputName);
 
-	std::cout << INPUT_COURSE_CREDITS;
-	std::getline(std::cin, inputCreditsString);
+	std::cout << INPUT_COURSE_CREDITS;					//Asking for the course credits
+	std::getline(std::cin, inputCreditsString);			
 	inputCredits = std::stoi(inputCreditsString);
 
-	std::cout << INPUT_COURSE_GRADE;
+	std::cout << INPUT_COURSE_GRADE;					//Asking for the course grade
 	std::getline(std::cin, inputGradeString);
 	inputGrade = std::stoi(inputGradeString);
+
+	//Making sure the given grade is within the boundaries
+	if (GRADE_LOWER_BOUNDARY > inputGrade || GRADE_UPPER_BOUNDARY < inputGrade) {
+		std::cout << "The grade you gave is not within the boundaries." << std::endl;
+		return;
+	}
 
 	//Creating the Course object and pushing it to the list
 	Course newCourse = Course(inputName, inputCredits, inputGrade);

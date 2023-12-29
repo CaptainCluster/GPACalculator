@@ -21,7 +21,7 @@ int main() {
 	Calculator* pCalculator = Calculator::getInstance();
 
 	while (!endProgram) {
-		//Listing all the possible choices before asking the user for one
+		//Listing all the possible choices before asking the user to choose one
 		std::cout << "Select one of the following options" << std::endl;
 		std::cout << "======================================" << std::endl;
 		std::cout << OPTION_ONE << std::endl;
@@ -100,8 +100,7 @@ int main() {
 				std::cout << "Invalid choice. Try again." << std::endl;
 				break;
 			};
-
-		} catch (const std::invalid_argument& e) {
+		} catch (const std::invalid_argument& e) { //Catching invalid input types
 			std::cerr << "Given input is not an integer. Try again.\n" << std::endl;
 		}
 	}

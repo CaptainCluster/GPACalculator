@@ -26,6 +26,6 @@ void Course::setGrade(int inputGrade) {
 	grade = inputGrade;
 }
 
-void Course::printInfo() {
+void Course::printInfo() const{
 	std::cout << "Course name: " << name << " Credits: " << credits << " Grade: " << grade << std::endl;
 }
