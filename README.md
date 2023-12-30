@@ -12,8 +12,8 @@
 
 C++ is a programming language that has fascinated me for quite some time. I took courses, involving both C and object-oriented programming (with Java). After completing the courses, I was left
 with a deep interest towards lower-level languages. With free time in my hand, I finally got around to pursuing this interest. The amazing community support and the capabilities of C++, with the 
-combination of OOP, that I have gotten familiar with, made me start pursuing C++. This is my very first C++ project, and in addition, this is my first time doing a full project using Visual Studio,
+combination of OOP that I have gotten familiar with, made me start pursuing C++. This is my very first C++ project, and on top of that, my first time doing a full project using Visual Studio,
 rather than Visual Studio Code. 
 
 Now after making this project, I am confident in my ability to set up new C++ projects and using Git to manage my repositories with Visual Studio. Despite this, this is just my first C++ project,
-albeit being a huge step for me. From the point onward, the smart choice is to maintain what I have built and create even more challenging projects.
+albeit being a huge step for me. From this point onward, the smart choice is to maintain what I have built and create even more challenging C++ projects.
